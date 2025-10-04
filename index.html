@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dedicación para la Mejor Mamá del Mundo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <header>
+            <h1>¡❤️Para ti madre querida❤️!</h1>
+        </header>
+
+        <section class="dedicatoria">
+            <img src="tu_foto_de_mama.jpeg" alt="Mi Hermosa Madre" class="foto-mama">
+
+            <button id="boton-revelar" onclick="revelarMensaje()">
+                ❤️Presiona Aquí❤️
+            </button>
+            
+            <div id="contenido-oculto" class="oculto">
+                <div class="mensaje">
+                    <p>
+                        ❤️Querida Mamá,
+                        <br><br>
+                        ❤️No hay palabras suficientes para describir lo agradecido que estoy por tenerte. Eres mi luz, mi fuerza y mi mayor inspiración.
+                        <br>
+                        ❤️Esta pequeña página es solo un reflejo del inmenso amor que siento. ¡Gracias por ser tú!
+                        <br><br>
+                        ❤️Con todo mi amor,
+                        <br>
+                        Sebathian
+                    </p>
+                </div>
+                
+                <div class="musica-contenedor">
+                    <h2>❤️:</h2>
+                    <audio id="audio-mama" controls loop>
+                        <source src="tu_cancion.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Hecho con amor.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.min.js"></script>
+
+    <script>
+        const jsConfetti = new JSConfetti();
+
+        function revelarMensaje() {
+            // 1. Muestra el contenido y oculta el botón
+            document.getElementById('contenido-oculto').classList.remove('oculto');
+            document.getElementById('boton-revelar').style.display = 'none';
+
+            // 2. Reproduce la música
+            var audio = document.getElementById('audio-mama');
+            audio.play(); 
+            
+            // 3. ¡Activa la lluvia de corazones!
+            jsConfetti.addConfetti({
+                emojis: ['💖', '💕', '✨', '❤️'], // Emojis que caerán
+                emojiSize: 30,
+                confettiNumber: 150, // Muchos corazones para el efecto sorpresa
+            });
+        }
+    </script>
+
+</body>
+</html>

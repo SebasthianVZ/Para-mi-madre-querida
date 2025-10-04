@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fce4ec; /* Rosa pálido, color cálido */
+    color: #4a148c; /* Morado oscuro para el texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    color: #e91e63; /* Rosa brillante */
+    font-size: 2.5em;
+    border-bottom: 2px solid #f8bbd0;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.foto-mama {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%; /* Hace la foto redonda */
+    border: 5px solid #ff80ab; /* Borde rosa alrededor de la foto */
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+/* --- ESTILO PARA EL BOTÓN --- */
+#boton-revelar {
+    background-color: #e91e63; /* Color de fondo rosa */
+    color: white; /* Letras blancas */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+#boton-revelar:hover {
+    background-color: #c2185b; /* Rosa más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Pequeño efecto de levantamiento */
+}
+
+/* --- CLASE PARA OCULTAR EL CONTENIDO --- */
+.oculto {
+    display: none;
+}
+
+.mensaje p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: left;
+    white-space: pre-line;
+    padding: 15px;
+    background-color: #fff0f5;
+    border-left: 5px solid #e91e63;
+    margin-bottom: 30px;
+}
+
+.musica-contenedor h2 {
+    color: #880e4f;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+audio {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px dashed #f8bbd0;
+    color: #c2185b;
+    font-size: 0.9em;
+}
